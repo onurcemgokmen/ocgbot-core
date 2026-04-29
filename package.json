@@ -1,0 +1,21 @@
+{
+  "name": "ocgbot-core",
+  "version": "0.1.0",
+  "description": "Minimum-viable multi-agent system in TypeScript. Under 500 lines. By OCGBOT Lab.",
+  "license": "MIT",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "seed": "node --experimental-sqlite -r ts-node/register scripts/seed-db.ts",
+    "demo": "node --experimental-sqlite -r ts-node/register scripts/demo.ts",
+    "test": "node test/precommit-leakage.test.js"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "ts-node": "^10.0.0"
+  }
+}
